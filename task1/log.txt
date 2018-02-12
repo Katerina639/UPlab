@@ -1,0 +1,11 @@
+mmit 8375fb223b20a2c21b0f46b48fe23309f9
+thor: Kate <Katerina639>
+te:   Mon Feb 12 16:39:36 2018 +0300
+
+  <E2><80><9C>addtask1\status.txt<E2><8
+
+mmit 628b5564af83c166a43892d9cff659000a
+thor: Kate <Katerina639>
+te:   Mon Feb 12 16:35:27 2018 +0300
+
+  <E2><80><9C>add.gitignore<E2><80><9D>
