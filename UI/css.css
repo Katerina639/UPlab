@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "bookman old style";
+    color: #085394;
+    font-size: 16px;
+}
+button {
+    font-family: "bookman old style";
+    color: #085394;
+    border: 2px solid rgb(8, 7, 97);
+    background-color: #9fc5f8;
+    padding: 10px 32px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button_bold {
+    font-weight: bold;
+}
+h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #085394;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#filtering {
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 6%;
+    margin-right: 75%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.center_string {
+    font-weight: bold;
+    text-align: center;
+}
+#search_tools {
+    position: fixed;
+    margin: auto;
+    ;
+    display: flex;
+    flex-direction: row;
+}
+.search_names {
+    font-size: 15px;
+    text-align: left;
+}
+.filter {
+    padding-top: 2px;
+    margin: 7px 0px 5px auto;
+    color: #085394;
+    text-align: center
+}
+#Add-photo {
+    position: fixed;
+    margin-top: 300px;
+    padding-left: 6%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Add-photo {
+    font-size: 15px;
+}
+.camera_enhance {
+    margin: auto;
+    cursor: pointer;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+}
+#photo {
+    align-items: left;
+    margin: 2% 10% auto 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.photo_image {
+    width: 400px;
+}
+.photo_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+#information {
+    margin: 10px, 10px, 5px, 5px;
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.upload-data {
+    text-align: right;
+    align-self: center;
+}
+.comments {
+    text-align: right;
+    align-self: center;
+    width: 100%;
+}
+.hashtags {
+    text-align: right;
+    align-self: center;
+    width: 100%;
+}
+#icons {
+    align-items: center;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.edit_icon {
+    cursor: pointer;
+}
+.like_icon {
+    margin-left: 20%;
+    margin-right: 5px;
+    font-size: 6em;
+    cursor: pointer;
+}
+.dislike_icon {
+    margin-right: 15px;
+    font-size: 6em;
+    cursor: pointer;
+}
+.delete_icon {
+    margin-left: 20%;
+    cursor: pointer;
+}
+img {
+    border-radius: 5px;
+}
+.load-more {
+    width: 200px;
+    height: 50px;
+    margin: 20px 45% 20px 45%;
+    cursor: pointer;
+}
+#footer {
+    width: 100%;
+    height: 8%;
+    left: 0;
+    bottom: 0;
+    border: 2px solid #085394;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.about {
+    font-size: 12px;
+}
+.my_link {
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: center;
+}
+@media screen and (max-width: 930px) {
+    #main {
+        overflow-x: auto;
+        font-size: 12px;
+    }
+    h1 {
+        margin-top: 150px;
+    }
+    #photo {
+        margin: 2% 10% auto 10%;
+        margin-top: 20px;
+    }
+    #filtering {
+        margin: 55px 0 0 0;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        background-color: white;
+        border: 2px solid #3d051b23;
+        border-radius: 2px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .filter {
+        width: 70%;
+    }
+    #Add-photo {
+        opacity: 0;
+    }
+    .load-more {
+        width: 150px;
+        height: 40px;
+        margin: 20px 40% 20px 40%;
+    }
+}
