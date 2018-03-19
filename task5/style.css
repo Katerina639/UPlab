@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "bookman old style";
+    color: #085394;
+    font-size: 16px;
+}
+button {
+    font-family: "bookman old style";
+    color: #085394;
+    border: 2px solid rgb(8, 7, 97);
+    background-color: #9fc5f8;
+    padding: 10px 32px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.PhotoPeace {
+    font-weight: bold;
+}
+#User {
+    font-weight: bold;
+}
+#LogOut {
+    font-weight: bold;
+}
+.LogIn {
+    font-weight: bold; 
+}
+h1 {
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #085394;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.filtering {
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 6%;
+    margin-right: 75%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.center_string {
+    font-weight: bold;
+    text-align: center;
+}
+.search_tools {
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.search_names {
+    font-size: 15px;
+    text-align: left;
+}
+.filter {
+    padding-top: 2px;
+    margin: 7px 0px 5px 0px;
+    color: #085394;
+    text-align: center;
+    width: 100%;
+}
+.ApplyFilters {
+    margin-top: 15px;
+    border: 2px solid #085394;
+    background-color: #9fc5f8;
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+.Add-photo {
+    position: fixed;
+    margin-top: 350px;
+    padding-left: 6%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.adding {
+    font-size: 15px;
+}
+.camera_enhance {
+    padding-left: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.photo_post {
+    align-items: left;
+    margin: 2% 30px auto 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.photo_image {
+    width: 400px;
+}
+.photo_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.information {
+    margin: 10px, 10px, 5px, 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.comments {
+    height: 40px;
+    width: 90%;
+    padding-left: 15px;
+    overflow: auto;
+    text-align: right;
+}
+.hashtags {
+    height: 40px;
+    width: 90%;
+    padding-left: 15px;
+    overflow: auto;
+    text-align: right;
+}
+.icons {
+    align-items: center;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.edit_icon {
+    cursor: pointer;
+}
+.like_icon {
+    margin-left: 20%;
+    margin-right: 5px;
+    font-size: 6em;
+    cursor: pointer;
+}
+.dislike_icon {
+    margin-right: 15px;
+    font-size: 6em;
+    cursor: pointer;
+}
+.delete_icon {
+    margin-left: 20%;
+    cursor: pointer;
+}
+img {
+    border-radius: 5px;
+}
+.load-more {
+    width: 20%;
+    height: 50px;
+    margin: 20px 40% 20px 40%;
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    height: 8%;
+    left: 0;
+    bottom: 0;
+    border: 2px solid #085394;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.about {
+    font-size: 12px;
+}
+.my_link {
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: center;
+}
+@media screen and (max-width: 930px) {
+    .main {
+        overflow-x: auto;
+        font-size: 12px;
+    }
+    button { 
+        font-family: "bookman old style";
+        color: #085394;
+        border: 2px solid rgb(8, 7, 97);
+        background-color: #9fc5f8;
+        padding: 5px 10px;
+        border-radius: 8px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+    }
+    h1 {
+        margin-top: 150px;
+    }
+    .header {
+        background-color: #c8e0f3;
+    }
+    .filtering {
+        margin: 55px 0 0 0;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #9fc5f8;
+        border-radius: 2px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .search_names {
+        padding-left: 10px;
+        padding-bottom: 1px;
+        font-size: 14px;
+    }
+    .filter {
+        width: 70%;
+    }
+    .Add-photo {
+        opacity: 0;
+    }
+    .photo_post {
+        align-items: left;
+        margin: 2% 10% auto 10%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .photo_image {
+        width: 100%;
+    }
+    .photo_header {
+        margin-left: 2%;
+    }
+    .load-more {
+        width: 30%;
+        height: 40px;
+        margin: 20px 35% 20px 35%;
+    }
+}

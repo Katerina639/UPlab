@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhotoPeace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="photos.js"></script>
+    <script src="dom.js"></script>
+    <script src="photos_tests.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/p.jpg" rel="shortcut icon" type="image/jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <form>
+            <button class="PhotoPeace">PhotoPeace</button>
+        </form>
+        <form>
+            <button id="User">Kate Kunts</button>
+        </form>
+        <form>
+            <button id="LogOut">Log out</button>
+        </form>
+    </div>
+    <div class="filtering">
+        <div class="center_string">
+            Search
+        </div>
+        <div class="seach_tools">
+            <div class="search_names">
+                author
+            </div>
+            <select id="author_filter" class = "filter">
+            </select>
+        </div>
+        <div class="seach_tools">
+            <div class="search_names">
+                date
+            </div><input id="date_filter" class="filter" type="date">
+        </div>
+        <div class="seach_tools">
+            <div class="search_names">
+                hashtag
+            </div><input id="hashtag_filter" placeholder="#tag1,#tag2               " class="filter" type="text">
+        </div>
+        <div class="seach_tools">
+            <button class = "ApplyFilters" onClick="showFittingPosts()">Apply filters</button>
+        </div>
+    </div>
+    <div class="Add-photo">
+        <p class="adding">Add new photo</p><i class="camera_enhance material-icons">camera_enhance</i>
+    </div>
+    <div class="main">
+        <h1>PhotoPeace</h1>
+        <div id="posts_list">  
+        </div>
+        <button class="load-more" onClick="pressLoadMoreButton()">load more</button>
+        <div class="footer">
+            <div class="about">
+                PhotoPeace 2018
+            </div>
+            <div class="about">
+                Katerina Kunts 5 group 2 course
+            </div>
+            <div class="my_link">
+                Katerina.Kunts@yandex.by
+            </div>
+            <div class="about">
+                Last modified date 26 02 2018
+            </div>
+        </div>
+    </div>
+</body>
+</html>
