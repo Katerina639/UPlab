@@ -113,10 +113,10 @@ const dom = (function() {
         let currentComment = document.getElementById('in_comments').value
         let post = {
             description: currentComment,
-            createdAt: new Date(), /////////////////
+            createdAt: new Date(), 
             author: currentAuthor,
-            photoLink: 'images/dog.jpg', /////////////////
-            Tags: [currentHashtag], ////////////////////////////
+            photoLink: 'images/dog.jpg', 
+            Tags: [currentHashtag], 
             like: []
         }
         return post
@@ -129,11 +129,13 @@ const dom = (function() {
         if (author_filter) filter.author = author_filter;
         if (date_filter) {
             let b = date_filter.split(/\D/);
-            filter.Date = new Date(b[0], b[1], b[2]);
+            const [year, month, day] = b;
+            filter.Date = new Date(year, month - 1, day);
         }
         if (hashtag_filter) {
             filter.Tags = hashtag_filter.split(',');
         }
+        console.log(filter)
         return filter
     },
     getCurrentName() {
