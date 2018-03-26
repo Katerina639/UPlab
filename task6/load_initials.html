@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <script>
+            const list = [{
+                id: 'post_1',
+                description: 'Love this town! Wonderful holidays!',
+                createdAt: new Date(2018, 02, 19),
+                author: 'Kate Kunts',
+                photoLink: 'images/photo1.jpg',
+                Tags: ['#NY', '#StatueOfLiberty'],
+                like: ['Julia', 'Boris', 'Andrey', 'Alexandr']
+            }, {
+                id: 'post_2',
+                description: 'Nice view :) Shri-Lanka!!!',
+                createdAt: new Date(2018, 02, 18),
+                author: 'Kate Kunts',
+                photoLink: 'https://www.royalindia.travel/management/mimages/MCAT2-44-Splendid-Goa-Tour-Package.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey']
+            }, {
+                id: 'post_3',
+                description: 'Beach in Shri-Lanka!',
+                createdAt: new Date(2018, 02, 18),
+                author: 'Ketko Evgenia',
+                photoLink: 'images/beach.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_4',
+                description: 'My dear friend, Alisa.',
+                createdAt: new Date(2018, 02, 18),
+                author: 'Boris Serenkov',
+                photoLink: 'http://www.beautiful-views.net/views/camera-photographic-flowers-girl-forest-way.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_5',
+                description: 'My fauvorite actor',
+                createdAt: new Date(2018, 02, 17),
+                author: 'Ginzburg Andrey',
+                photoLink: 'http://cdn.collider.com/wp-content/uploads/daniel_radcliffe_01.jpg',
+                Tags: ['#HarryPotter'],
+                like: ['Julia', 'Boris', 'Kate']
+            }, {
+                id: 'post_6',
+                description: 'Wow! I have met him today in the forest! Nice to met you dear deer :)',
+                createdAt: new Date(2018, 02, 16),
+                author: 'Ketko Evgenia',
+                photoLink: 'images/photo5.jpg',
+                Tags: ['#Deer', '#Winter', '#Home'],
+                like: ['Julia', 'Andrey', 'Kate']
+            }, {
+                id: 'post_7',
+                description: 'Great morning photo!',
+                createdAt: new Date(2018, 02, 14),
+                author: 'Kate Kunts',
+                photoLink: 'images/berry.jpg',
+                Tags: ['#Currant', '#Winter'],
+                like: ['Julia', 'Boris', 'Andrey', 'Evgenia', 'Kate']
+            }, {
+                id: 'post_8',
+                description: 'Imagine Dragons! Perfect concert! I would never forget it!',
+                createdAt: new Date(2018, 02, 14),
+                author: 'Kakoi-to Chel',
+                photoLink: 'http://nosalive.com/wp-content/uploads/2016/12/NOS-Alive-Imagine-Dragons-FB-OG.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate', 'LoL KeK Cheburek']
+            }, {
+                id: 'post_9',
+                description: 'Really pleased! Love all of you!!!',
+                createdAt: new Date(2018, 02, 13),
+                author: 'Kuzmich Alexandr',
+                photoLink: 'images/photo4.jpg',
+                Tags: ['#Party', '#Valentine Day'],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_10',
+                description: 'My guitar... You are always with me) fantastik music of my life...',
+                createdAt: new Date(2018, 02, 12),
+                author: 'Evgeniy Kukel',
+                photoLink: 'https://truimg.toysrus.com/product/images/disney-pixar-coco-guitar-white--BC077F8A.zoom.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_11',
+                description: 'Love this town! Wonderful holidays!',
+                createdAt: new Date(2017, 02, 19),
+                author: 'Kate Kunts',
+                photoLink: 'images/photo1.jpg',
+                Tags: ['#NY', '#StatueOfLiberty'],
+                like: ['Julia', 'Boris', 'Andrey', 'Alexandr']
+            }, {
+                id: 'post_12',
+                description: 'Nice view :) Shri-Lanka!!!',
+                createdAt: new Date(2017, 02, 18),
+                author: 'Kate Kunts',
+                photoLink: 'https://www.royalindia.travel/management/mimages/MCAT2-44-Splendid-Goa-Tour-Package.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey']
+            }, {
+                id: 'post_13',
+                description: 'Beach in Shri-Lanka!',
+                createdAt: new Date(2017, 02, 18),
+                author: 'Ketko Evgenia',
+                photoLink: 'images/beach.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_14',
+                description: 'My dear friend, Alisa.',
+                createdAt: new Date(2017, 02, 18),
+                author: 'Boris Serenkov',
+                photoLink: 'http://www.beautiful-views.net/views/camera-photographic-flowers-girl-forest-way.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_15',
+                description: 'My fauvorite actor',
+                createdAt: new Date(2017, 02, 17),
+                author: 'Ginzburg Andrey',
+                photoLink: 'http://cdn.collider.com/wp-content/uploads/daniel_radcliffe_01.jpg',
+                Tags: ['#HarryPotter'],
+                like: ['Julia', 'Boris', 'Kate']
+            }, {
+                id: 'post_16',
+                description: 'Wow! I have met him today in the forest! Nice to met you dear deer :)',
+                createdAt: new Date(2017, 02, 16),
+                author: 'Ketko Evgenia',
+                photoLink: 'images/photo5.jpg',
+                Tags: ['#Deer', '#Winter', '#Home'],
+                like: ['Julia', 'Andrey', 'Kate']
+            }, {
+                id: 'post_17',
+                description: 'Great morning photo!',
+                createdAt: new Date(2017, 02, 14),
+                author: 'Kate Kunts',
+                photoLink: 'images/berry.jpg',
+                Tags: ['#Currant', '#Winter'],
+                like: ['Julia', 'Boris', 'Andrey', 'Evgenia', 'Kate']
+            }, {
+                id: 'post_18',
+                description: 'Imagine Dragons! Perfect concert! I would never forget it!',
+                createdAt: new Date(2017, 02, 14),
+                author: 'Kakoi-to Chel',
+                photoLink: 'http://nosalive.com/wp-content/uploads/2016/12/NOS-Alive-Imagine-Dragons-FB-OG.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate', 'LoL KeK Cheburek']
+            }, {
+                id: 'post_19',
+                description: 'Really pleased! Love all of you!!!',
+                createdAt: new Date(2017, 02, 13),
+                author: 'Kuzmich Alexandr',
+                photoLink: 'images/photo4.jpg',
+                Tags: ['#Party', '#Valentine Day'],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }, {
+                id: 'post_20',
+                description: 'My guitar... You are always with me) fantastik music of my life...',
+                createdAt: new Date(2017, 02, 12),
+                author: 'Evgeniy Kukel',
+                photoLink: 'https://truimg.toysrus.com/product/images/disney-pixar-coco-guitar-white--BC077F8A.zoom.jpg',
+                Tags: [],
+                like: ['Julia', 'Boris', 'Andrey', 'Kate']
+            }];
+
+            function loadInitials() {
+                localStorage.setItem('photopeace_list', JSON.stringify(list))
+            }
+        </script>
+    </head>
+    <body>
+    <button onClick="loadInitials()">Reset Posts to LocalStorage</button>
+    </body>
+</html>
